@@ -2,22 +2,22 @@
 
 ## Screenshots
 
-![Screenshot 1](ss/1.png)
-![Screenshot 2](ss/2.png)
-![Screenshot 3](ss/3.png)
-![Screenshot 4](ss/4.png)
-![Screenshot 5](ss/5.png)
-![Screenshot 6](ss/6.png)
-![Screenshot 7](ss/7.png)
+![Screenshot 1](1.png)
+![Screenshot 2](2.png)
+![Screenshot 3](3.png)
+![Screenshot 4](4.png)
+![Screenshot 5](5.png)
+![Screenshot 6](6.png)
+![Screenshot 7](7.png)
 
 ### Case Screens
-![Case 1](ss/c1.png)
-![Case 2](ss/c2.png)
-![Case 3](ss/c3.png)
+![Case 1](c1.png)
+![Case 2](c2.png)
+![Case 3](c3.png)
 
 ### Simulation
-![Simulation 1](ss/s1.png)
-![Simulation 2](ss/s2.png)
+![Simulation 1](s1.png)
+![Simulation 2](s2.png)
 
 
 
