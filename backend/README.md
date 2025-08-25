@@ -16,7 +16,7 @@ python scripts/seed_data.py
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 backend/
@@ -35,7 +35,7 @@ backend/
 └── requirements.txt          # Python dependencies
 ```
 
-## 🔧 Architecture
+##  Architecture
 
 ### Layered Architecture
 
@@ -52,7 +52,7 @@ backend/
 - **Service Layer**: Orchestrates business operations
 - **Async/Await**: Full async support with SQLAlchemy 2.0
 
-## 📊 Database Schema
+##  Database Schema
 
 ### WorkOrder
 ```sql
@@ -77,7 +77,7 @@ CREATE TABLE operations (
 );
 ```
 
-## 🎯 Business Rules
+##  Business Rules
 
 ### R1 - Precedence
 Operations within a work order must follow sequential order:
@@ -91,29 +91,10 @@ No overlapping operations on the same machine:
 Operations cannot be scheduled in the past:
 - Operation start time must be ≥ current time
 
-## 🔍 API Endpoints
+##  API Endpoints
 
 All endpoints are available at `/api/v1/` with full OpenAPI documentation at `/docs`.
 
-### Core Endpoints
-
-- `GET /work-orders/` - Get all work orders
-- `PUT /work-orders/operations/{id}` - Update operation with validation
-- `GET /work-orders/timeline/data` - Get timeline visualization data
-- `GET /work-orders/{id}/validate` - Validate work order consistency
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=app
-
-# Run specific test file
-pytest tests/test_scheduling_rules.py -v
-```
 
 ## 📝 Development
 
@@ -139,7 +120,7 @@ alembic upgrade head
 alembic downgrade -1
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Environment Variables
 
