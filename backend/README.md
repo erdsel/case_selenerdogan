@@ -2,7 +2,7 @@
 
 FastAPI backend for the Factory Scheduler application with PostgreSQL database, SQLAlchemy ORM, and comprehensive business rule validation.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Install dependencies
