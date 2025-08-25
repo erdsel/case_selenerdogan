@@ -26,6 +26,8 @@
 
 ### Technology Stack
 
+![Screenshot 1](Resim1.png)
+
 **Backend:**
 - Python 3.11+ with FastAPI framework
 - PostgreSQL 15 for data persistence
