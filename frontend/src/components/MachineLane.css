@@ -1,0 +1,145 @@
+/* Machine Lane Styling */
+.machine-lane {
+  position: relative;
+  border-bottom: 1px solid #e2e8f0;
+  background: white;
+  transition: background-color 0.2s ease;
+  height: 80px;
+}
+
+.machine-lane:hover {
+  background: #f8fafc;
+}
+
+.machine-lane:last-child {
+  border-bottom: none;
+}
+
+/* Machine Label */
+.machine-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-right: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Operations Container */
+.operations-container {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  height: 100%;
+}
+
+.operation-wrapper {
+  position: absolute;
+  top: 18px;
+}
+
+/* Current Time Line */
+.current-time-line {
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: 2px;
+  background: #ef4444;
+  height: 100%;
+  opacity: 0.6;
+  pointer-events: none;
+  box-shadow: 0 0 4px rgba(239, 68, 68, 0.4);
+}
+
+/* Drop Zone Styles */
+.machine-lane.drop-valid {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.machine-lane.drop-invalid {
+  background: #fef2f2;
+  border-color: #ef4444;
+}
+
+.drop-indicator {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.drop-zone-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px dashed #3b82f6;
+  border-radius: 4px;
+  animation: pulse 1s infinite alternate;
+}
+
+.drop-error {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  border: 1px solid #fca5a5;
+  z-index: 1000;
+}
+
+.drop-success {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fef3c7;
+  color: #d97706;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  border: 1px solid #fcd34d;
+  z-index: 1000;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; }
+  100% { opacity: 0.8; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .machine-label {
+    width: 60px;
+    font-size: 0.8rem;
+  }
+  
+  .operations-container {
+    left: 60px;
+  }
+  
+  .current-time-line {
+    left: 60px;
+  }
+  
+  .drop-indicator {
+    left: 60px;
+  }
+}

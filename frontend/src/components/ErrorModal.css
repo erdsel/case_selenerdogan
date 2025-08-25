@@ -1,0 +1,173 @@
+/* Error Modal Overlay */
+.error-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Error Modal Container */
+.error-modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Error Modal Header */
+.error-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+}
+
+.error-modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #991b1b;
+}
+
+.error-modal-close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #991b1b;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.error-modal-close:hover {
+  background: rgba(239, 68, 68, 0.1);
+  transform: scale(1.1);
+}
+
+/* Error Modal Body */
+.error-modal-body {
+  padding: 2rem;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.error-icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.error-message p {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #fef2f2;
+  border-left: 3px solid #ef4444;
+  border-radius: 4px;
+}
+
+.error-message p:first-child {
+  margin-top: 0;
+}
+
+.error-message p:last-child {
+  margin-bottom: 0;
+}
+
+/* Error Modal Footer */
+.error-modal-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  background: #f9fafb;
+}
+
+.error-modal-button {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.error-modal-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+}
+
+.error-modal-button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .error-modal {
+    width: 95%;
+    margin: 1rem;
+  }
+  
+  .error-modal-header {
+    padding: 1rem;
+  }
+  
+  .error-modal-body {
+    padding: 1.5rem 1rem;
+  }
+  
+  .error-modal-footer {
+    padding: 1rem;
+  }
+  
+  .error-modal-button {
+    width: 100%;
+  }
+}

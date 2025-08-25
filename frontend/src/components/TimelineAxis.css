@@ -1,0 +1,42 @@
+/* Axis kapsayıcısı relative olmazsa tüm tick'ler sol üstte yığılır */
+.gt-axis {
+    position: relative;
+    background: #f3f4f6;           /* gray-100 */
+    border-bottom: 1px solid #e5e7eb;
+    overflow: hidden;
+  }
+  
+  /* Tick mutlak konumda; left piksel ile veriliyor */
+  .gt-axis-tick {
+    position: absolute;
+    top: 0;
+    
+    height: 100%;
+  }
+  
+  /* Etiket */
+  .gt-axis-label {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transform: translateX(-50%);
+    text-align: left;
+    line-height: 1.05;
+    font-size: 11px;
+    color: #374151;                /* gray-700 */
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .gt-axis-time { font-weight: 600; }
+  .gt-axis-date { color: #6b7280; font-weight: 500; }
+  
+  /* Çizgi sadece axis alanında */
+  .gt-axis-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    border-left: 1px solid #e5e7eb;
+  }
+  
